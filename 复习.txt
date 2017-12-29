@@ -1,0 +1,40 @@
+焦点：ol/ul （li current)
+
+logo：div>h1>a （写“京东”且加text-indent）
+
+分割符可用 宽1px 的div 加背景色
+
+tab栏 用ul>li>a
+
+热词 用a 排列
+
+帮助模块 用 div>dl>(dt>a)+(dd>a)
+
+底部链接 用a 排列
+
+翅膀类广告 用div>a div给背景图 a 需要宽高100% 
+ div子绝父相 mian 部分z-index需大于0
+
+
+   	子绝父相
+ 
+	大盒子中只要孩子浮动，要浮动都浮动
+
+	排列整齐用浮动 不整齐用定位
+
+轮播图的简化格式
+<a href=""></a>
+<a href=""></a>
+<ul>
+	<li>
+ 	<a><img></a>
+		</li>
+</ul>需要的时候在添加li
+轮播图的小圆点
+<ol>
+<li></li>
+</ol>需要几个小圆点就用几个li，然后添加定位子绝父相
+有时候也用子绝父绝，但要注意相对定位的元素。
+通过top，bottom,left,right来控制往剧中对其的方式减去自身盒子的一半。或者使用translateXY(50%);transform的几种属性，translate,scale,rotate
+
+	
